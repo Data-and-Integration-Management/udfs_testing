@@ -1,3 +1,8 @@
+--!jinja 
+    
+use database {{ env }};
+use schema {{ schema }};
+
 create or replace function ADD_ONE(NUM INT)
 returns int 
 language python 
